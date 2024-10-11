@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    height: 100vh;
+}
+
+.game-area {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    background-color: lightblue;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url('player.png'); /* Gambar default player */
+}
+
+#obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: red; /* Rintangan merah */
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
